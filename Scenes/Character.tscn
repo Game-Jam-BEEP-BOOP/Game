@@ -1,0 +1,40 @@
+[gd_scene load_steps=7 format=3 uid="uid://otilkginonu7"]
+
+[ext_resource type="Texture2D" uid="uid://dabhomkrgqyjv" path="res://Game/Resources/BlueWizard/2BlueWizardIdle/Chara - BlueIdle00000.png" id="1_2ylln"]
+[ext_resource type="Script" path="res://Game/Scripts/Character.gd" id="1_x8tf0"]
+[ext_resource type="Texture2D" uid="uid://bi6rilw3jpfwl" path="res://Game/Resources/Plant Animations/BlueFlower1/BlueFlower_00001.png" id="2_q3xhm"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_bj5v2"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_2ylln")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_q3xhm")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_eif8y"]
+radius = 73.0
+height = 348.0
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_f8cjk"]
+radius = 61.0328
+
+[node name="MainCharacter" type="CharacterBody2D"]
+script = ExtResource("1_x8tf0")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_bj5v2")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-2, -19)
+shape = SubResource("CapsuleShape2D_eif8y")
+
+[node name="Collision 2" type="CollisionShape2D" parent="."]
+position = Vector2(2, 10)
+shape = SubResource("CircleShape2D_f8cjk")
