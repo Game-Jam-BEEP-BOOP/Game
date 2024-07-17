@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dhhl6i3ulk3u3"
+path="res://.godot/imported/battleThemeA.mp3-f02a999233c21f6f9bb5db1e4bc45aa1.mp3str"
+
+[deps]
+
+source_file="res://Game/Resources/BlueWizard/Old Resources/audio/battleThemeA.mp3"
+dest_files=["res://.godot/imported/battleThemeA.mp3-f02a999233c21f6f9bb5db1e4bc45aa1.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
